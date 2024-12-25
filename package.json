@@ -1,6 +1,6 @@
 {
   "name": "@cakadi190/react-multicontext-loader",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A simple React utility for wrapping multiple context providers",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
