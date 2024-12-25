@@ -1,16 +1,22 @@
 {
   "name": "@cakadi190/react-multicontext-loader",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A simple React utility for wrapping multiple context providers",
-  "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
   "files": [
     "dist",
     "README.md",
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --project tsconfig.json",
     "clean": "rm -rf dist"
   },
   "repository": {
@@ -23,12 +29,6 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
-  },
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.js"
-    }
   },
   "devDependencies": {
     "@types/react": "^19.0.2",
